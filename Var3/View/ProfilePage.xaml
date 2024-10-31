@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Var3.View.ProfilePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Var3.View" xmlns:viewmodel="clr-namespace:Var3.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="1001">
+    <Grid Background="#FFA4A7A4">
+        <StackPanel>
+            <TextBlock Text="Профиль пользователя" FontSize="24" FontWeight="Bold" Margin="10"/>
+            <TextBlock Text="{Binding User.Имя}" FontSize="18" Margin="10"/>
+            <TextBlock Text="{Binding User.Телефон}" FontSize="18" Margin="10"/>
+            <TextBlock Text="{Binding User.Адрес}" FontSize="18" Margin="10"/>
+            <TextBlock Text="{Binding User.Логин}" FontSize="18" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
